@@ -78,6 +78,8 @@ const RenderField: React.FC<RenderFieldProps> = ({ field, props }) => {
       return (
         <FormControl>
           <Textarea
+            value={field.value}
+            onChange={field.onChange}
             placeholder={placeholder}
             className="shad-textArea"
             disabled={props.disabled}
