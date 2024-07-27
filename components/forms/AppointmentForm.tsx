@@ -25,7 +25,7 @@ interface Props {
   patientId: string;
   type: "create" | "cancel" | "schedule";
   appointment?: Appointment;
-  setOpen: (open: boolean) => void;
+  setOpen?: (open: boolean) => void;
 }
 
 const AppointmentForm: React.FC<Props> = ({
